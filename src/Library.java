@@ -249,7 +249,7 @@ public class Library {
 
         if (readers.contains(newReader)) { //Eğer okur zaten kayıtlıysa bunu bildirir, ikinci kez kayıt yapmaz.
             System.out.println("Reader already registered.");
-            return null;
+            return newReader;
         } else {
             readers.add(newReader);
             System.out.println("New reader added successfully!");
